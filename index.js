@@ -22,7 +22,7 @@ module.exports = function angularFilesort () {
 
       if (deps.modules) {
         // Store references to each file with a declaration:
-        Object.keys(deps.modules).forEach(function (name) {
+        Object.keys(deps.modules).sort().forEach(function (name) {
           angmods[name] = file;
         });
       }
